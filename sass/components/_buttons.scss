@@ -1,3 +1,30 @@
-/* This file is used to style buttons across the website. 
-   Add your custom button styles here. 
-   This file is intentionally left blank. */
+.btn-nav {
+  color: $clr-mangoo-green;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: $clr-mangoo-white;
+  text-align: center;
+  width: 161px;
+  height: 39px;
+  line-height: 39px;
+}
+
+.btn-cta {
+  font-size: 1.2em;
+  font-weight: 600;
+  height: 61px;
+  width: 256px;
+  text-align: center;
+  line-height: 61px;
+  border-radius: 8px;
+
+  &-green {
+    background-color: $clr-mangoo-green;
+    color: $clr-mangoo-white;
+  }
+
+  &-white {
+    background-color: $clr-mangoo-white;
+    color: $clr-mangoo-green;
+  }
+}

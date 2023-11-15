@@ -2,19 +2,88 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +93,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,16 +111,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -52,32 +134,37 @@ table {
   border-spacing: 0;
 }
 
-/* This file contains all the base styles related to typography. */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+  font-weight: 400;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 7em;
+  font-weight: 500;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 3em;
+  font-style: italic;
 }
 
 h3 {
-  font-size: 1.17em;
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 h5 {
@@ -89,11 +176,178 @@ h6 {
 }
 
 p {
-  margin-bottom: 1em;
+  line-height: 1.5;
+  font-size: 1em;
+  font-weight: 500;
 }
 
-/* This file is used to style buttons across the website. 
-   Add your custom button styles here. 
-   This file is intentionally left blank. */
+.btn-nav {
+  color: #b2d234;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #ffffff;
+  text-align: center;
+  width: 161px;
+  height: 39px;
+  line-height: 39px;
+}
+
+.btn-cta {
+  font-size: 1.2em;
+  font-weight: 600;
+  height: 61px;
+  width: 256px;
+  text-align: center;
+  line-height: 61px;
+  border-radius: 8px;
+}
+.btn-cta-green {
+  background-color: #b2d234;
+  color: #ffffff;
+}
+.btn-cta-white {
+  background-color: #ffffff;
+  color: #b2d234;
+}
+
+body {
+  background: #ffffff;
+}
+
+header {
+  background-image: url("images/Header Back.png");
+  height: 100vh;
+  background-size: cover;
+  color: #ffffff;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  padding: 25px 40px;
+}
+header nav .nav-items {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+  font-weight: 300;
+}
+header nav .nav-items > li:hover {
+  border-bottom: 2px solid #ffffff;
+}
+header .icon-social {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 10px;
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(96, 160, 216, 0.5), rgba(178, 210, 52, 0.5));
+}
+
+.title {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title > h2 {
+  margin-left: 414px;
+  transform: rotate(-9deg);
+}
+
+main {
+  position: relative;
+  overflow-x: hidden;
+}
+main .description {
+  display: flex;
+  height: 80vh;
+}
+main .description h3 {
+  color: #b2d234;
+}
+main .description-text {
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 8%;
+}
+main .description-text > p {
+  margin-right: 50%;
+  color: #606060;
+}
+main .description .image-container {
+  position: absolute;
+  z-index: -100;
+  right: -10%;
+}
+main .description > img {
+  display: block;
+}
+main .preparation {
+  background-image: url("images/ismael-trevino-NDyuR4Huig8-unsplash.png");
+  height: 80vh;
+  background-size: cover;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+main .preparation > p {
+  color: #ffffff;
+}
+main .preparation > div {
+  grid-column: 6/12;
+  background-color: rgba(178, 210, 52, 0.8);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  margin-right: 10%;
+  align-items: center;
+  padding: 5%;
+}
+main .menu {
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-inline: 10%;
+}
+main .menu p {
+  color: #606060;
+}
+main .menu .header-menu {
+  text-align: center;
+  margin-inline: 10%;
+  margin-bottom: 10%;
+}
+main .menu .header-menu h3 {
+  color: #b2d234;
+}
+main .menu .detail-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+main .menu .detail-menu .header-card {
+  display: flex;
+  justify-content: space-between;
+}
+main .menu .detail-menu .header-card h4 {
+  color: #b2d234;
+}
+main .menu .detail-menu .type-menu h2 {
+  color: #60a0d8;
+}
+main .menu .detail-menu .type-menu h2 + h2 {
+  color: #b2d234;
+}
 
 /*# sourceMappingURL=main.css.map */
