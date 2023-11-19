@@ -283,7 +283,7 @@ main .description-text {
 @media (max-width: 599px) {
   main .description-text {
     align-items: center;
-    margin-inline: 10%;
+    margin-inline: 8%;
     padding-bottom: 5%;
   }
   main .description-text .btn-cta-green {
@@ -425,12 +425,12 @@ main .menu .detail-menu .type-menu {
 }
 @media screen and (max-width: 1200px) {
   main .menu .detail-menu .type-menu {
-    width: 100%;
+    width: 60%;
     gap: 50px;
     justify-self: center;
   }
 }
-@media (max-width: 5%) {
+@media (max-width: 599px) {
   main .menu .detail-menu .type-menu {
     width: 100%;
   }
@@ -605,7 +605,7 @@ body {
 }
 
 header {
-  background-image: url("images/Header Back.png");
+  background-image: url("images/header.png");
   height: 100vh;
   background-size: cover;
   color: #ffffff;
