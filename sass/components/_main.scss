@@ -1,0 +1,384 @@
+main {
+  position: relative;
+  overflow-x: hidden;
+  .description {
+    display: flex;
+    height: 80vh;
+
+    @media (max-width: $media-query-small) {
+      gap: $gap-small;
+    }
+
+    h3 {
+      color: $clr-mangoo-green;
+    }
+
+    &-text {
+      flex-direction: column;
+      justify-content: center;
+      margin-left: $padding-medium;
+
+      @media (max-width: $media-query-small) {
+        align-items: center;
+        margin-inline: $margin-medium;
+        padding-bottom: $padding-small;
+
+        .btn-cta-green {
+          width: auto;
+          height: auto;
+        }
+      }
+
+      & > p {
+        margin-right: 50%;
+        color: $clr-mangoo-grey;
+
+        @media (max-width: $media-query-small) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .image-container {
+      position: absolute;
+      z-index: -100;
+      right: -10%;
+
+      @media (max-width: 1200px) {
+        width: 60%;
+        height: 60%;
+      }
+    }
+
+    & > img {
+      display: block;
+    }
+  }
+
+  .preparation {
+    background-image: url("images/ismael-trevino-NDyuR4Huig8-unsplash.png");
+    height: 100vh;
+    background-size: cover;
+    color: $clr-mangoo-white;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+
+    @media screen and (max-width: 1199px) {
+      grid-template-columns: 1fr;
+
+      .preparation-text {
+        margin-inline: $margin-medium;
+        height: 75%;
+      }
+    }
+
+    @media (min-width: $media-query-medium) and (max-width: $media-query-large) {
+      .preparation-text {
+        height: 75%;
+      }
+    }
+
+    > div {
+      height: 65%;
+      grid-column: 8 / 16;
+      background-color: $clr-section-green;
+      color: $clr-mangoo-white;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-self: center;
+      margin-right: $margin-medium;
+      align-items: center;
+      justify-content: space-between;
+      padding: $padding-small $padding-large $padding-small $padding-large;
+
+      > p {
+        color: $clr-mangoo-white;
+        padding-inline: $padding-medium;
+      }
+
+      > a {
+        width: 44.1%;
+      }
+    }
+  }
+
+  .menu {
+    margin-bottom: $margin-small;
+    margin-top: $margin-small;
+    margin-inline: $margin-medium;
+    p {
+      color: $clr-mangoo-grey;
+    }
+    .header-menu {
+      text-align: center;
+      margin-inline: $margin-large;
+      margin-bottom: $margin-small;
+      h3 {
+        color: $clr-mangoo-green;
+      }
+    }
+
+    .detail-menu {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: $gap-large;
+
+      @media screen and (max-width: $media-query-medium) {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .list-menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+        .card-menu {
+          &-content {
+            padding: 1rem;
+
+            &-popular {
+              border: 1px solid $clr-mangoo-green;
+              padding: 1rem;
+            }
+          }
+          .popular {
+            display: flex;
+            justify-content: flex-end;
+
+            > p {
+              color: $clr-mangoo-white;
+              font-size: 12px;
+              background-color: $clr-mangoo-green;
+              padding-inline: 12px;
+              height: 24px;
+              line-height: 24px;
+            }
+          }
+
+          .header-card {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 10px;
+
+            h4 {
+              color: $clr-mangoo-green;
+            }
+          }
+        }
+      }
+
+      .type-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+
+        @media screen and (max-width: $media-query-medium) {
+          width: 100%;
+          gap: 50px;
+          justify-self: center;
+        }
+
+        @media (max-width: $margin-small) {
+          width: 100%;
+        }
+
+        @media (min-width: $media-query-extra-large) {
+          width: 65%;
+        }
+
+        > p {
+          text-align: center;
+        }
+
+        > a {
+          width: 70%;
+        }
+
+        .h2-title-force {
+          h2 {
+            font-size: 3.55em;
+            color: $clr-mangoo-green;
+            transform: rotate(-9deg);
+
+            & + h2 {
+              color: $clr-mangoo-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ingredients {
+    background-image: url("images/louis-hansel-MlPD-AzZYMg-unsplash.png");
+    height: 90vh;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    color: $clr-mangoo-white;
+    padding-inline: $padding-small;
+    gap: $gap-small;
+    text-align: center;
+
+    @media screen and (max-width: 1000px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .ingredients-vert,
+      .ingredients-blue {
+        margin-inline: $margin-large;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .ingredients-vert,
+      .ingredients-blue {
+        margin: 0;
+      }
+    }
+
+    &-list {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-block: $margin-medium;
+    }
+
+    &-vert,
+    &-blue {
+      grid-row: 2 / 3;
+
+      > h3 {
+        padding-top: $padding-small;
+      }
+    }
+
+    &-vert {
+      background-color: $clr-section-green;
+    }
+
+    &-blue {
+      background-color: $clr-section-blue;
+    }
+  }
+
+  .apply {
+    display: flex;
+    align-items: center;
+    margin-left: 3%;
+    margin-block: $margin-small;
+    gap: 5%;
+
+    @media screen and (max-width: $media-query-medium) {
+      flex-direction: column-reverse;
+      margin-left: 0;
+
+      a {
+        margin-bottom: $margin-small;
+      }
+
+      .form-apply {
+        width: 100%;
+      }
+
+      img {
+        height: 300px;
+        width: 300px;
+      }
+    }
+
+    .image-container {
+      position: relative;
+
+      > img {
+        object-fit: cover;
+      }
+
+      .cross {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 8px;
+        background-color: #fff;
+
+        &-horizontal {
+          width: 100%;
+        }
+
+        &-vertical {
+          width: 8px;
+          height: 100%;
+        }
+      }
+    }
+
+    a {
+      width: 35.2%;
+      margin-top: 2%;
+      margin-left: 30%;
+    }
+
+    .form-apply {
+      display: flex;
+      flex-direction: column;
+      width: 46%;
+
+      @media screen and (max-width: $media-query-medium) {
+        width: 80%;
+      }
+
+      > p {
+        margin-right: 35%;
+        color: $clr-mangoo-grey;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin-top: $margin-small;
+          font-style: italic;
+          font-size: 1.27em;
+          color: $clr-mangoo-green;
+          margin-bottom: 10px;
+        }
+
+        textarea {
+          height: $textarea-height;
+          border: 1px solid #c9c9c9;
+          margin-bottom: $margin-small;
+          resize: none;
+        }
+
+        .form-first-last-name {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: $gap-small;
+
+          .first-name,
+          .last-name {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+
+        input {
+          height: $input-height;
+          border: 1px solid #c9c9c9;
+        }
+      }
+
+      > h3 {
+        color: $clr-mangoo-green;
+        margin-bottom: 3%;
+      }
+    }
+  }
+}
