@@ -283,7 +283,7 @@ main .description-text {
 @media (max-width: 599px) {
   main .description-text {
     align-items: center;
-    margin-inline: 8%;
+    margin-inline: 10%;
     padding-bottom: 5%;
   }
   main .description-text .btn-cta-green {
@@ -358,9 +358,9 @@ main .preparation > div > a {
   width: 44.1%;
 }
 main .menu {
-  margin-bottom: 5%;
-  margin-top: 5%;
-  margin-inline: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-inline: 10%;
 }
 main .menu p {
   color: #606060;
@@ -425,12 +425,12 @@ main .menu .detail-menu .type-menu {
 }
 @media screen and (max-width: 1200px) {
   main .menu .detail-menu .type-menu {
-    width: 60%;
+    width: 100%;
     gap: 50px;
     justify-self: center;
   }
 }
-@media (max-width: 599px) {
+@media (max-width: 5%) {
   main .menu .detail-menu .type-menu {
     width: 100%;
   }
@@ -683,7 +683,7 @@ header .icon-social {
 }
 
 body {
-  background: #ffffff;
+  background-image: url("images/61842.png");
 }
 
 /*# sourceMappingURL=main.css.map */
