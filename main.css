@@ -328,7 +328,7 @@ main .preparation {
   }
   main .preparation .preparation-text {
     margin-inline: 10%;
-    height: 75%;
+    height: 85%;
   }
 }
 @media (min-width: 1200px) and (max-width: 1799px) {
